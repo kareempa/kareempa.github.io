@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+	<head>
+	<title> Login/Register </title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="author" content="Kareem Paul">
+		<link rel="stylesheet" href="../css/style1.css">
+	</head>
+
+<body>
+
+	<header>
+		<img src="../images/KMJRS.PNG" alt="KMJRS Logo" id="logo">
+	</header>	
+	
+	<nav id="horBar">
+		<ul>
+			<li><a href="../Index.html">Home</a></li>
+			<li><a href="Services.html">Services</a></li>
+			<li><a href="Testimonials.html">Testimonials</a></li>
+			<li><a href="#">Login/Register</a></li>
+			<li><a href="Contact.html">Contact Us</a></li>
+			<li><a href="About.html">About Us</a></li>
+		</ul>
+	</nav>
+
+	<main id="container">
+
+		
+	<div id="form-container">
+			
+	
+	
+	
+	
+
+
+	<div class="form-item">
+		<h2>Not a member?</h2>
+		<form method="post" action="response.html">
+		<fieldset>
+			<legend>User Information</legend>
+				
+				<label>Full Name&colon;</label>
+					<input type="text" id="fname" name="fullname" size="30" placeholder="Enter your full name"><br><br>
+
+				<label>Date of birth&colon;</label>
+					<input type="date" id="dob" name="dob"><br><br>
+
+				<label>Gender&colon;</label>
+					Male <input type="radio" id="m_gender" name="gender" value="Male">&nbsp;
+					Female <input type="radio" id="f_gender" name="gender" value="Female"><br><br>
+
+				<label>Email Address&colon;</label>
+					<input type="email" id="eAdd" name="eAdd"><br><br>
+					
+				<label>Phone Number&colon;</label>
+					<input type="tel" id="phone" name="phone"><br><br>
+
+				<label>Session Type&colon;</label>
+					<select id="session_type" name="session_type">
+						<option value="">Please select a session.</option>
+						<option value="recording">Recording</option>
+						<option value="mixing">Mixing</option>
+						<option value="mastering">Mastering</option>
+					</select><br><br>
+
+				<label>Primary Instrument (optional)&colon;</label>
+					Piano <input type="checkbox" id="p_instrument" name="P_instrument" value="Piano">&nbsp;
+					Guitar <input type="checkbox" id="g_instrument" name="g_instrument" value="Guitar">&nbsp;
+					Saxophone <input type="checkbox" id="s_instrument" name="s_instrument" value="Saxophone"><br><br>
+
+				<label>Preferred Days/Time for Sessions&colon;</label>
+					<input type="text" id="availability" name="availability"><br><br>
+		</fieldset>
+		
+		<fieldset>
+			<legend>Login Information</legend>
+			<label>UserName&colon;</label>
+				<input type="text" id="u_name" name="username"><br><br>
+
+			<label>Password&colon;</label>
+				<input type="password" id="pword" name="pword"><br><br>
+
+			<label>Confirm Password&colon;</label>
+				<input type="password" id="cpword" name="Confirm Password"><br><br>
+					
+				<span class="buttons">
+					<input type="submit" value="REGISTER NOW">&nbsp;&nbsp;
+					<input type="reset" value="RESET">
+				</span>
+		</fieldset>
+			  
+		</form>
+		</div>
+		
+		<div class="form-item">
+		<h2>Registered Member Login</h2>
+		<form method="post" action="response.html">
+		<fieldset>
+			<legend>Login</legend>
+			
+				<label> UserName&colon;</label>
+				<input type="text" id="uname" name="username"><br><br>
+							
+				<label>Password&colon;</label>
+				<input type="password" id="pwd" name="pwd" maxlength="8"><br><br>
+						
+				<span class="buttons">
+					<input type="submit" value="LOGIN">
+				</span>
+					</fieldset>
+	</form><br>
+			</div>
+	</div>
+</main>
+
+<footer>&copy;Kareem Paul</footer>
+
+</body>
+</html>
